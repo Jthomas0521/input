@@ -1,0 +1,12 @@
+.env
+docs/
+tests/
+*.log
+data/
+.cache/
+.idea/
+.vscode/
+.git
+.svn
+*.pyc
+__pycache__
