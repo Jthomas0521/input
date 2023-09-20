@@ -1,7 +1,13 @@
 import os
 
-folder_path = '/Documents/GitHub/Input/text'
+input_folder = '/Users/jahquanthomas/Documents/GitHub/input/text'
 
-for file in os.listdir(folder_path):
-    if os.path.isfile(os.listdir(folder_path)):
-        print(file)
+for file_name in os.listdir(input_folder):
+        input_path = os.path.join(input_folder, file_name)
+    
+        if os.path.isfile(input_path):
+            print(f"Lines from '{file_name}':")
+            with open(input_path, "r") as file:
+                for line in file:
+                    print(line.strip())
+            print("\n")
