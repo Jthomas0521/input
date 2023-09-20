@@ -1,6 +1,9 @@
 import os, time
 
-input_folder = '/Users/jahquanthomas/Documents/GitHub/input/text'
+dir_folder = os.path.dirname(os.path.abspath(__file__))
+
+input_folder = os.path.join(dir_folder, 'text')
+
 
 for file_name in os.listdir(input_folder):
         input_path = os.path.join(input_folder, file_name)
