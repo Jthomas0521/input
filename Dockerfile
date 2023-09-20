@@ -1,7 +1,7 @@
 FROM python:3.10-slim
 
-WORKDIR /app
+WORKDIR /input
 
-COPY . /app/
+COPY . /input/
 
 CMD ["python", "input.py"]
