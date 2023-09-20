@@ -2,7 +2,7 @@ import os, time
 
 dir_folder = os.path.dirname(os.path.abspath(__file__))
 
-input_folder = os.path.join(dir_folder, 'text')
+input_folder = '/text'
 
 
 for file_name in os.listdir(input_folder):
